@@ -50,8 +50,6 @@ npm install
 npm run dev
 ```
 
-Acesse o frontend em [http://localhost:5173](http://localhost:5173).
-
 ## Funcionalidades
 - Cadastro de usuários
 - Listagem de usuários
