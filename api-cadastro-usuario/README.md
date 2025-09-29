@@ -1,12 +1,67 @@
-# React + Vite
+# Cadastro de Usuário
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto de uma aplicação web para cadastro de usuários, composta por um frontend em React (Vite) e um backend em Node.js com Prisma.
 
-Currently, two official plugins are available:
+## Estrutura do Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+Cadastro_de_usuario/
+  api-cadastro-usuario/   # Frontend (React + Vite)
+  api-nodejs/             # Backend (Node.js + Prisma)
+```
 
-## Expanding the ESLint configuration
+## Pré-requisitos
+- Node.js
+- npm ou yarn
+- Banco de dados SQLite (padrão do Prisma)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Instalação
+
+### 1. Clone do repositório
+```bash
+git clone https://github.com/brunofonsecavaz/Cadastro_de_usuario.git
+cd Cadastro_de_usuario
+```
+
+### 2. Instale as dependências do backend
+```bash
+cd api-nodejs
+npm install
+```
+
+### 3. Configure o banco de dados
+```bash
+npx prisma migrate dev
+```
+
+### 4. Inicie o backend
+```bash
+node server.js
+```
+
+### 5. Instale as dependências do frontend
+```bash
+cd ../api-cadastro-usuario
+npm install
+```
+
+### 6. Inicie o frontend
+```bash
+npm run dev
+```
+
+Acesse o frontend em [http://localhost:5173](http://localhost:5173).
+
+## Funcionalidades
+- Cadastro de usuários
+- Listagem de usuários
+- Integração entre frontend e backend
+
+## Tecnologias Utilizadas
+- React
+- Vite
+- Node.js
+- Prisma ORM
+- SQLite
+
+Sinta-se à vontade para contribuir!
