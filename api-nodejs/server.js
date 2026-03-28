@@ -21,7 +21,7 @@ app.post('/usuarios', async (request, response) => {
         }
     });
 
-    response.status(201).send(user); // aqui estava o erro
+    response.status(201).send(user); 
 });
 
 
